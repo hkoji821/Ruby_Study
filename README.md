@@ -1,2 +1,2 @@
 # Ruby_Study
-Rubyの練習用
+Rubyの練習用。
