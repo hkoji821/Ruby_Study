@@ -12,4 +12,3 @@ when "冬"
     puts "冬です"
 else  
     puts "該当する季節がありません"    
-end
