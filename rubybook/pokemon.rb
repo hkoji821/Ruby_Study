@@ -4,17 +4,24 @@ class Pokemon
         @name = name
         @state = "default"
     end
-    def id
-        return @id
-    end
-    def name
-        return @name
-    end
+    # def id
+    #     return @id
+    # end
+    attr_reader :id
+    # def name
+    #     return @name
+    # end
+    attr_reader :name
 
-    def state
-        return getState
-    end
-    private
+    # def state
+        # return @state
+    # end
+    
+    # def state=(text)
+    #     @state = text
+    # end
+    
+    attr_accessor :state
     def getState
         case @state
         when "burning"
@@ -33,9 +40,6 @@ class Pokemon
 
     end
 
-    def state=(text)
-        @state = text
-    end
     def isBurning
         return @state == "burning" ? "やけど状態です" : "やけど状態ではありません"
     end
